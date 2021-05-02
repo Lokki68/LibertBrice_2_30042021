@@ -16,6 +16,11 @@ input{
     border: none;
 }
 
+h2{
+    font-size: 15px;
+    font-weight: 700;
+}
+
 /** Header **/
 
 header{
@@ -109,3 +114,46 @@ header{
 .info-img-search{
     display: none;
 }
+
+/**Filtre**/
+
+.info-filter{
+    display: flex;
+    align-items: center;
+}
+
+.info-filter h2{
+    margin-right: 20px;
+}
+
+.info-filter i{
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.filter-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-container :hover{
+    color: #0065fc;
+    background-color: #DEEBFF;
+}
+
+.btn-filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2em;
+    border: 2px solid #DEEBFF;
+    border-radius: 30px;
+    height: 2.5em;
+}
+
+.btn-filter a{
+    padding: 0 1em 0 1em;
+}
+
