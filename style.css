@@ -1,5 +1,6 @@
 *{
     font-family: "Raleway", sans-serif;
+    background-color: #F2F2F2;
 }
 
 ul{
@@ -9,6 +10,10 @@ ul{
 a{
     text-decoration: none;
     color: black;
+}
+
+input{
+    border: none;
 }
 
 /** Header **/
@@ -52,6 +57,7 @@ header{
 
 /** Information **/
 
+/** Titre**/
 .info{
     display: flex;
     flex-direction: column;
@@ -62,4 +68,44 @@ header{
     line-height: 30%;
 }
 
-.
+/**Barre de recherche**/
+
+.info-searchBar{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 30px 0;
+}
+
+.info-iconeMaps-searchBar i{
+    padding: 13px 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #DEEBFF;
+}
+
+.info-searchBar-input{
+    font-size: 12px;
+    padding: 0.85em;
+    margin: 0;    
+}
+
+.info-searchBar-input ::placeholder{
+    color: black;
+    font-weight: 700;
+}
+
+.info-logo-search{
+    padding: 13px;
+    font-size: 12px;
+    background-color: #0065fc;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    width: 10em;
+}
+
+
+.info-img-search{
+    display: none;
+}
