@@ -1,6 +1,5 @@
 *{
     font-family: "Raleway", sans-serif;
-    margin: 0 15px;
 }
 
 ul{
@@ -43,8 +42,24 @@ header{
 
 .header-navigation a:hover{
     border-top: 2px solid #0065fc;
+    color: #0065fc;
+    font-weight: 600;
 }
 .header-login a{
     color: #0065fc;
     font-weight: 600;
 }
+
+/** Information **/
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title{
+    font-size: 12px;
+    line-height: 30%;
+}
+
+.
