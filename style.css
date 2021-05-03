@@ -126,11 +126,7 @@ header{
     margin-right: 20px;
 }
 
-.info-filter i{
-    background-color: #DEEBFF;
-    padding: 10px;
-    border-radius: 30px;
-}
+
 
 .filter-container{
     display: flex;
@@ -147,13 +143,23 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     margin-right: 2em;
     border: 2px solid #DEEBFF;
     border-radius: 30px;
     height: 2.5em;
 }
 
+.btn-filter i{
+    background-color: #DEEBFF;
+    position:absolute;
+    left:-3px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
 .btn-filter a{
     padding: 0 1em 0 1em;
+    margin-left: 15px;
 }
 
