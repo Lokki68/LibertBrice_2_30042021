@@ -1,6 +1,6 @@
 *{
     font-family: "Raleway", sans-serif;
-    background-color: #F2F2F2;
+    background-color: #fff;
 }
 
 ul{
@@ -85,7 +85,7 @@ header{
     padding: 13px 15px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
 }
 
 .info-searchBar-input{
@@ -126,8 +126,6 @@ header{
     margin-right: 20px;
 }
 
-
-
 .filter-container{
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +134,11 @@ header{
 
 .filter-container :hover{
     color: #0065fc;
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
+}
+
+.filter-container a{
+    background-color: inherit;
 }
 
 .btn-filter{
@@ -145,13 +147,13 @@ header{
     justify-content: space-between;
     position: relative;
     margin-right: 2em;
-    border: 2px solid #DEEBFF;
+    border: 2px solid #f2f2f2;
     border-radius: 30px;
     height: 2.5em;
 }
 
 .btn-filter i{
-    background-color: #DEEBFF;
+    background-color: #f2f2f2;
     position:absolute;
     left:-3px;
     padding: 10px;
@@ -175,7 +177,7 @@ header{
 .search-result i{
     padding: 10px;
     margin-right: 10px;
-    border: 2px solid #DEEBFF;
+    border: 2px solid #f2f2f2;
     border-radius: 50%;
 }
 
@@ -184,3 +186,71 @@ header{
     font-weight: 200;
 }
 
+/** Middle Content**/
+
+.middle-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    /** Hébergement **/
+
+.hebergement{
+    background: #f2f2f2;
+    width: 70%;
+    height: 600px;
+    padding: 10px;
+    border-radius: 10px
+}
+
+.hebergement h2{
+    background: #f2f2f2;
+    margin-left: 20px;
+}
+
+.hebergement-line-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 35px;
+    background: #f2f2f2;
+}
+
+.hebergement-line-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background: #f2f2f2;
+}
+
+.card-hebergment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    width: 250px;
+    line-height: .3px;
+}
+
+.card-hebergment img{
+    margin-top: 10px;    
+    width: 225px;
+    height:150px; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+
+
+
+
+    /**Les plus populaire**/
+.most-popular{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
