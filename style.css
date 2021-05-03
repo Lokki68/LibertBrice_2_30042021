@@ -163,3 +163,24 @@ header{
     margin-left: 15px;
 }
 
+/** Résultat Recherche **/
+
+.search-result{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-result i{
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #DEEBFF;
+    border-radius: 50%;
+}
+
+.search-result p{
+    font-size: 15px;
+    font-weight: 200;
+}
+
