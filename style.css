@@ -27,7 +27,7 @@ h2{
 
 /** Header **/
 
-header{
+.top-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,10 +139,7 @@ header{
 .filter-container :hover{
     color: #0065fc;
     background-color: #f2f2f2;
-}
-
-.filter-container a{
-    background-color: inherit;
+    cursor: pointer;
 }
 
 .btn-filter{
@@ -150,7 +147,8 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    margin-right: 2em;
+    margin: 0 2px 0 15px;
+    padding-left: 35px;
     border: 2px solid #f2f2f2;
     border-radius: 30px;
     height: 2.5em;
@@ -162,11 +160,6 @@ header{
     left:-3px;
     padding: 10px;
     border-radius: 30px;
-}
-
-.btn-filter a{
-    padding: 0 1em 0 1em;
-    margin-left: 15px;
 }
 
 /** Résultat Recherche **/
