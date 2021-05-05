@@ -457,5 +457,31 @@ footer section h2{
 
     /** Activités **/
 
-    
+    .activity{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activity-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity-bigCard{
+        width: 800px;
+    }
+
+    .activity-bigCard img{
+        width: 800px;
+    }
+
+    .activity-littleCard{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .activity-littleCard img{
+        width: 400px;
+    }
 }
