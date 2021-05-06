@@ -363,6 +363,7 @@ h2{
 .activity-littleCard img{
     width: 300px;
     height: 180px;
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -402,7 +403,7 @@ footer section h2{
 
 /******Média Queries*****/
 
-/**Tablette <1040px **/
+/**Tablette < 1120px **/
 @media screen and (max-width: 1120px) {
 
     /** Middle Content **/
@@ -484,4 +485,129 @@ footer section h2{
     .activity-littleCard img{
         width: 400px;
     }
+}
+
+/**Mobile < 925px **/
+
+@media screen and (max-width: 925px) {
+
+    /** Header **/
+
+    .top-title{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2fr 2fr;
+        grid-template-areas: 
+        "logo login" 
+        "hebergement activity";
+    }
+
+    .header-logo{
+        grid-area: logo;
+    }
+
+    .header-login{
+        grid-area: login;
+    }
+
+    .header-navigation-hebergement{
+        grid-area: hebergement;
+    }
+
+    .header-navigation-activity{
+        grid-area: activity;
+    }
+
+
+    /** Information **/
+
+    .info-title h1{
+        line-height: 20px;
+    }
+
+    /** Search Bar **/
+
+    .info-logo-search{
+        display: none;
+    }
+
+    .info-img-search{
+        display: block;
+        padding: 13px;
+        font-size: 12px;
+        background-color: #0065fc;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: none;
+        width: 40px;
+    }
+
+    .info-img-search i{
+        background-color: #0065fc;
+        color: #fff;
+    }
+    
+
+    /** Info Filtre**/
+
+    .info-filter{
+        align-items: flex-start;
+    }
+
+    .btn-filter{
+        margin-bottom: 15px;
+    }
+
+    /** Main **/
+
+        /** les plus populaires **/
+    .most-popular-card{
+        flex-direction: column;
+    }
+
+        /** Hébergement **/
+    .hebergement-card,
+    .hebergement-line-1,
+    .hebergement-line-2{
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .card-hebergment{
+        margin-bottom: 15px;
+        width: 320px;
+    }
+
+    .card-hebergment img{
+        width: 300px;
+    }
+
+    /** Activity**/
+     
+    .activity-card{
+        width: 320px;
+    }
+
+    .activity-bigCard{
+        width: 300px;
+        margin-bottom: -200px;
+
+    }
+
+    .activity-bigCard img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .activity-littleCard{
+        flex-direction: column;
+        width: 300px;
+    }
+    .activity-littleCard img{
+        width: 300px;
+        height: 200px;
+    }
+
+
+    /** Footer **/
 }
