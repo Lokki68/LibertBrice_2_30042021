@@ -409,7 +409,6 @@ footer section h2{
     /** Middle Content **/
 
     .middle-content{
-        display: flex;
         flex-direction: column-reverse;
         align-items: center;
     } 
@@ -417,7 +416,6 @@ footer section h2{
     /** Les plus Populaires **/
 
     .most-popular{
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         width: auto;
@@ -429,7 +427,6 @@ footer section h2{
     }
 
     .most-popular-card{
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -459,12 +456,11 @@ footer section h2{
     /** Activités **/
 
     .activity{
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .activity-card{
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -563,6 +559,7 @@ footer section h2{
         /** les plus populaires **/
     .most-popular-card{
         flex-direction: column;
+        align-items: center;
     }
 
         /** Hébergement **/
@@ -570,6 +567,7 @@ footer section h2{
     .hebergement-line-1,
     .hebergement-line-2{
         flex-direction: column;
+        align-items: center;
         width: 350px;
     }
 
@@ -610,4 +608,8 @@ footer section h2{
 
 
     /** Footer **/
+
+    footer{
+        flex-direction: column;
+    }
 }
