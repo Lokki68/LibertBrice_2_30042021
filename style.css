@@ -94,7 +94,7 @@ h2{
 
 .info-searchBar-input{
     font-size: 12px;
-    padding: 0.85em;
+    padding: 14px;
     margin: 0;    
 }
 
@@ -492,6 +492,9 @@ footer section h2{
     .top-title{
         flex-wrap: wrap;
     }
+
+    
+    
 
     /** Information **/
 
