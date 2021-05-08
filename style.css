@@ -498,8 +498,7 @@ footer section h2{
     .top-title{
         flex-wrap: wrap;
     }
-
-    
+  
     
 
     /** Information **/
@@ -525,7 +524,7 @@ footer section h2{
         width: 40px;
     }
 
-    .info-img-search i{
+    .info-img-search{
         background-color: #0065fc;
         color: #fff;
     }
