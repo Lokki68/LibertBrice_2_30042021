@@ -490,30 +490,8 @@ footer section h2{
     /** Header **/
 
     .top-title{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 2fr 2fr;
-        grid-template-areas: 
-        "logo login" 
-        "hebergement activity";
+        flex-wrap: wrap;
     }
-
-    .header-logo{
-        grid-area: logo;
-    }
-
-    .header-login{
-        grid-area: login;
-    }
-
-    .header-navigation-hebergement{
-        grid-area: hebergement;
-    }
-
-    .header-navigation-activity{
-        grid-area: activity;
-    }
-
 
     /** Information **/
 
