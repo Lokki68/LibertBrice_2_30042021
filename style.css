@@ -3,10 +3,6 @@
     background-color: #fff;
 }
 
-ul{
-    list-style-type: none;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -28,41 +24,56 @@ h2{
 /** Header **/
 
 .top-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr .5fr 2fr .5fr 1fr;
+    grid-template-areas: 
+        "logo . nav-heber . nav-activ . login";
 }
 
 .header-logo img{
-    width: 25%;
+    width: 70%;
 }
 
-.header-nav{
+.header-logo{
+    grid-area: logo;
+}
+
+.header-nav-hebergement{
+    grid-area: nav-heber;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;    
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-top: 2px solid #f2f2f2;
 }
 
-.header-navigation{
-    display: flex;
-    flex-direction: row;
-    margin-right: 45px;    
-}
-.header-navigation a{
-    padding: 20px 10px 0 10px;
-
-}
-
-.header-navigation a:hover{
+.header-nav-hebergement:hover{
+    color: #0065fc;
     border-top: 2px solid #0065fc;
-    color: #0065fc;
-    font-weight: 600;
 }
-.header-login a{
-    color: #0065fc;
-    font-weight: 600;
+
+.header-nav-activity{
+    grid-area: nav-activ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+    border-top: 2px solid #f2f2f2;
 }
+
+.header-nav-activity:hover{
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+.header-login{
+    grid-area: login;
+    display: flex;
+    align-items: center;
+}
+
+
 
 /** Information **/
 
@@ -424,7 +435,7 @@ footer section h2{
     .most-popular{
         flex-direction: column;
         justify-content: flex-start;
-        width: auto;
+        width: 95%;
         margin-bottom: 15px;
     }
 
@@ -443,7 +454,7 @@ footer section h2{
     /** Hébergement **/
 
     .hebergement{
-        width: auto;
+        width: 95%;
         height: auto;
     }
 
@@ -496,7 +507,26 @@ footer section h2{
     /** Header **/
 
     .top-title{
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "logo login"
+            "nav-heber nav-activ";
+    }
+
+    .header-logo img{
+        width: 50%;
+    }
+
+    .header-login,
+    .header-login a{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 25px;
+        font-weight: 700;
+        color: #0065fc;
     }
   
     
@@ -543,12 +573,22 @@ footer section h2{
     /** Main **/
 
         /** les plus populaires **/
+    .most-popular{
+        width: auto;
+    }
+
+    
     .most-popular-card{
         flex-direction: column;
         align-items: center;
     }
 
         /** Hébergement **/
+
+    .hebergement{
+        width: auto;
+    }
+
     .hebergement-card,
     .hebergement-line-1,
     .hebergement-line-2{
