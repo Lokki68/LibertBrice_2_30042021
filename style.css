@@ -26,16 +26,19 @@ h2{
 .top-title{
     display: grid;
     grid-template-columns: 1fr 7fr 2fr .5fr 2fr .5fr 1fr;
+    grid-template-rows: 100px;
     grid-template-areas: 
         "logo . nav-heber . nav-activ . login";
 }
 
-.header-logo img{
-    width: 70%;
-}
-
 .header-logo{
     grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo img{
+    width: 100%;
 }
 
 .header-nav-hebergement{
@@ -47,30 +50,35 @@ h2{
     border-top: 2px solid #f2f2f2;
 }
 
-.header-nav-hebergement:hover{
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
-}
-
 .header-nav-activity{
     grid-area: nav-activ;
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 0 10px;
     border-top: 2px solid #f2f2f2;
 }
 
+.header-nav-hebergement:hover,
 .header-nav-activity:hover{
-    color: #0065fc;
     border-top: 2px solid #0065fc;
+}
+
+.header-nav-hebergement a:hover,
+.header-nav-activity a:hover{
+    color: #0065fc;
+    font-weight: 600;
 }
 
 .header-login{
     grid-area: login;
     display: flex;
     align-items: center;
+}
+
+.header-login a{
+    font-weight: 700;
+    color: #0065fc;
 }
 
 
@@ -517,6 +525,18 @@ footer section h2{
 
     .header-logo img{
         width: 50%;
+    }
+
+    .header-nav-hebergement,
+    .header-nav-activity{
+        border-bottom:  2px solid #f2f2f2;
+        border-top: none;
+    }
+
+    .header-nav-hebergement:hover,
+    .header-nav-activity:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
     }
 
     .header-login,
