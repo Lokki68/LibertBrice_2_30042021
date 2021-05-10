@@ -1,4 +1,4 @@
-*{
+html{
     font-family: "Raleway", sans-serif;
     background-color: #fff;
 }
@@ -417,7 +417,6 @@ footer{
 footer section{
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin: 25px 100px 0 0;
 }
 
