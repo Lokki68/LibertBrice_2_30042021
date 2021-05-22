@@ -93,7 +93,11 @@ h2{
 
 .info-title{
     font-size: 12px;
-    line-height: 30%;
+    line-height: 40px;
+}
+
+.info-title h1 {
+    line-height: 40px;
 }
 
 /**Barre de recherche**/
@@ -312,6 +316,7 @@ button{
 .card-popular{
     display: flex;
     flex-direction: row;
+    width: 100%;
     margin: 0 10px 15px 0;
     background: #fff;
     padding: 5px;
