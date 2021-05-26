@@ -85,6 +85,7 @@ h2{
     grid-area: login;
     display: flex;
     align-items: center;
+    margin-right: 5px;
 }
 
 .header-login a{
@@ -476,14 +477,21 @@ footer{
     justify-content: flex-start;
 }
 
+footer li {
+    list-style: none;
+    margin-left: 5px;
+    line-height: 25px;
+}
+
 footer section{
     display: flex;
     flex-direction: column;
     margin: 25px 100px 0 0;
 }
 
-footer section h2{
-    margin-left: 40px;
+footer h2{
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 
@@ -504,7 +512,7 @@ footer section h2{
     .most-popular{
         flex-direction: column;
         justify-content: flex-start;
-        width: 95%;
+        width: 100%;
         margin-bottom: 15px;
     }
 
@@ -522,9 +530,10 @@ footer section h2{
 
     /** Hébergement **/
 
-    .hebergement{
-        width: 95%;
+    .hebergment{
+        width: 100%;
         height: auto;
+        background-color: #FFF;
     }
 
     .hebergement-title{
@@ -655,13 +664,18 @@ footer section h2{
 
         /** les plus populaires **/
     .most-popular{
-        width: auto;
+        width: 100%;
     }
 
     
     .most-popular-card{
         flex-direction: column;
         align-items: center;
+    }
+
+    .card-popular {
+        display: flex;
+        justify-content: space-between;
     }
 
         /** Hébergement **/
