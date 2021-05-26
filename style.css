@@ -1,3 +1,5 @@
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
 html{
     font-family: "Raleway", sans-serif;
     background-color: #fff;
@@ -19,6 +21,15 @@ h1{
 h2{
     font-size: 20px;
     font-weight: 700;
+}
+
+/* Couleur icone */
+.blue {
+    color: #0065fc;
+}
+
+.grey {
+    color: lightgrey;
 }
 
 /** Header **/
@@ -117,7 +128,7 @@ h2{
 
 .info-searchBar-input{
     font-size: 12px;
-    padding: 14px;
+    height: 16px;
     margin: 0;    
 }
 
@@ -143,6 +154,9 @@ h2{
 }
 
 /**Filtre**/
+
+/* color incons */
+
 
 .info-filter{
     display: flex;
@@ -222,7 +236,7 @@ button{
 }
     /** Hébergement **/
 
-.hebergement{
+.hebergment{
     display: flex;
     flex-direction: column;
     background: #f2f2f2;
@@ -232,21 +246,21 @@ button{
     border-radius: 15px
 }
 
-.hebergement-title{
+.hebergment-title{
     background: #f2f2f2;
     margin-left: 20px;
 }
 
-.hebergement-title h2{
+.hebergment-title h2{
     background: #f2f2f2;
 }
 
 
-.hebergement-card{
+.hebergment-card{
     background-color: #f2f2f2;
 }
 
-.hebergement-line-1{
+.hebergment-line-1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -254,7 +268,7 @@ button{
     background: #f2f2f2;
 }
 
-.hebergement-line-2{
+.hebergment-line-2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -265,13 +279,11 @@ button{
 .card-hebergment{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-shadow: 4px 4px rgba(128, 128, 128, .03);
-    background: #fff;
-    padding-bottom: 5px;
+    align-content: space-between;
+    background-color: white;
     border-radius: 15px;
-    width: 250px;
-    line-height: .3px;
+    height: auto;
+    line-height: 25px;
 }
 
 .card-hebergment img{
@@ -280,6 +292,17 @@ button{
     height:150px; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+
+.card-hebergment-detail {
+    margin-left: 10px;
+}
+.card-hebergment-detail  h3 {
+    font-weight: 600;
+}
+
+.card-hebergment-star {
+    margin-left: 10px;
 }
 
     /**Les plus populaire**/
