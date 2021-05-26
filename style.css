@@ -129,7 +129,11 @@ h2{
 .info-searchBar-input{
     font-size: 12px;
     height: 16px;
-    margin: 0;    
+    padding-left: 5px;
+}
+
+.info-searchBar-input::selection {
+    border: none;
 }
 
 .info-searchBar-input ::placeholder{
@@ -201,7 +205,10 @@ button{
 .btn-filter i{
     background-color: #f2f2f2;
     position:absolute;
-    left:-3px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    left:-2px;
     padding: 10px;
     border-radius: 30px;
 }
@@ -213,9 +220,14 @@ button{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 .search-result i{
+    text-align: center;
+    width: 40px;
+    height: 40px;
     padding: 10px;
     margin-right: 10px;
     border: 2px solid #f2f2f2;
@@ -232,7 +244,7 @@ button{
 .middle-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
     /** Hébergement **/
 
@@ -241,7 +253,7 @@ button{
     flex-direction: column;
     background: #f2f2f2;
     width: 68%;
-    height: 600px;
+    height: auto;
     padding: 10px;
     border-radius: 15px
 }
@@ -249,6 +261,7 @@ button{
 .hebergment-title{
     background: #f2f2f2;
     margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 .hebergment-title h2{
@@ -282,16 +295,17 @@ button{
     align-content: space-between;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0 ,0 ,0 ,.15);
     height: auto;
     line-height: 25px;
 }
 
 .card-hebergment img{
-    margin-top: 10px;    
     width: 225px;
     height:150px; 
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    padding: 5px 5px 0 5px;
 }
 
 .card-hebergment-detail {
@@ -320,8 +334,9 @@ button{
 .most-popular-title{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
     background: #f2f2f2;
 }
 
@@ -340,21 +355,37 @@ button{
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 0 10px 15px 0;
+    height: 130px;
+    margin: 15px 10px 15px 0;
     background: #fff;
     padding: 5px;
-    box-shadow: 4px 4px rgba(128, 128, 128, .03);
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0 , .15);
     border-radius: 15px;
     font-size: 15px;
 }
 
+.card-popular-img {
+    display: flex;
+}
+
 .card-popular img{
-    width: 130px;
-    height: 140px;
+    width: 110px;
+    height: 120px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     margin-right: 5px;
+}
+
+.card-popular-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.card-popular-info h3{
+    font-weight: 600;
 }
 
 /** Activités **/
