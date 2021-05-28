@@ -190,9 +190,10 @@ h2 {
 }
 
 .flexForm_icon i {
-  padding: 9.5px 15px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  padding: 12px 15px;
+  font-size: 12px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #f2f2f2;
 }
 
@@ -211,8 +212,8 @@ h2 {
   background-color: #0065fc;
   color: #fff;
   padding: 9.5px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   position: relative;
   left: -11px;
 }
@@ -638,6 +639,23 @@ footer h2 {
 
 /**Tablette < 1120px **/
 @media screen and (max-width: 1120px) {
+  /** Info - Filter **/
+  .info-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container_1,
+  .container_2 {
+    display: flex;
+    flex-direction: row;
+  }
+
   /** Middle Content **/
 
   .middle-content {
@@ -759,7 +777,7 @@ footer h2 {
   /** Information **/
 
   .info-title h1 {
-    line-height: 20px;
+    line-height: 25px;
   }
 
   /** Search Bar **/
@@ -770,11 +788,11 @@ footer h2 {
 
   .info-img-search {
     display: block;
-    padding: 13px;
+    padding: 11px 15px;
+    margin-left: -25px;
     font-size: 12px;
     background-color: #0065fc;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 10px;
     border: none;
     width: 40px;
   }
@@ -788,6 +806,10 @@ footer h2 {
 
   .info-filter {
     align-items: flex-start;
+  }
+
+  .info-filter h2 {
+    margin-bottom: 10px;
   }
 
   .btn-filter {
@@ -863,5 +885,24 @@ footer h2 {
 
   footer {
     flex-direction: column;
+  }
+}
+
+/**Iphone < 414px **/
+
+@media screen and (max-width: 414px) {
+  /* Info*/
+
+  /* Filtre */
+
+  .container_2 {
+    flex-direction: column;
+  }
+
+  /* Search result */
+
+  .search-result i {
+    width: 25px;
+    height: 25px;
   }
 }
