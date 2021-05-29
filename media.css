@@ -33,6 +33,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    height: auto;
     border-radius: 0 ;
     margin-bottom: 15px;
   }
@@ -64,6 +65,7 @@
     width: 100%;
     height: auto;
     background-color: #fff;
+    border-radius: 0;
   }
 
   .hebergment-title {
@@ -73,7 +75,7 @@
 
   .hebergment-card {
     justify-content: space-between;
-    background-color: inherit;
+    background-color: #fff;
   }
 
   .card-hebergment {
@@ -171,18 +173,40 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 700;
     color: #0065fc;
   }
 
   /** Information **/
 
+    /* Titre */
+
+  .info-title {
+    margin-top: 20px;
+  }
+
   .info-title h1 {
     line-height: 25px;
+    margin-right: 50px;
+    font-weight: 700;
+  }
+
+  .info-title p {
+    margin-top: 5px;
+    font-size: 15px;
   }
 
   /** Search Bar **/
+
+  .flexForm {
+    margin-left: 20px;
+    width: 150px
+  }
+
+  .flexForm_search {
+    width: 230px;
+  }
 
   .info-logo-search {
     display: none;
@@ -212,10 +236,17 @@
 
   .info-filter h2 {
     margin-bottom: 10px;
+    font-weight: 700;
   }
 
   .btn-filter {
     margin-bottom: 15px;
+  }
+
+  /* Search Result */
+
+  .search-result i {
+    margin-top: -15px;
   }
 
   /** Main **/
@@ -233,6 +264,7 @@
   .card-popular {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   /** Hébergement **/
@@ -258,7 +290,7 @@
 
   .card-hebergment {
     margin-bottom: 15px;
-    width: 320px;
+    width: 340px;
   }
 
   .card-hebergement-img {
@@ -267,7 +299,7 @@
   }
 
   .card-hebergment img {
-    width: 310px;
+    width: 335px;
   }
 
   /** Activity**/
@@ -322,7 +354,12 @@
 
   footer {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  footer section {
+    margin-left: 15px;
+    margin-right: 0;
   }
 }
 
@@ -358,11 +395,18 @@
 
   /* Redimensionnement des cartes. */
 
+   .activity-bigCard,
+  .activity-middleCard,
+  .activity-littleCard {
+    width: 340px;
+    height: 175px;
+  }
+
   .activity-bigCard img,
   .activity-middleCard img,
   .activity-littleCard img {
-    width: 290px;
-    height: 180px;
+    width: 340px;
+    height: 120px;
   }
 }
 
