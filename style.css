@@ -80,12 +80,13 @@ a {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* Couleur icone */
@@ -101,9 +102,11 @@ h2 {
 
 .top-title {
   display: grid;
-  grid-template-columns: 1fr 7fr 2fr 0.5fr 2fr 0.5fr 1fr;
+  grid-template-columns: 1fr 7fr 2fr 5px 2fr 5px 1fr;
   grid-template-rows: 100px;
   grid-template-areas: "logo . nav-heber . nav-activ . login";
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .header-logo {
@@ -121,7 +124,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
   border-top: 2px solid #f2f2f2;
 }
 
@@ -130,7 +132,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
   border-top: 2px solid #f2f2f2;
 }
 
@@ -169,11 +170,16 @@ h2 {
 .info-title {
   font-size: 12px;
   line-height: 40px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .info-title h1 {
   line-height: 40px;
+  font-weight: 600;
+}
+
+.info-title p {
+  margin-top: -15px;
 }
 
 /**Barre de recherche**/
@@ -182,7 +188,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 15px 0 30px 10px;
+  margin: 10px 0 20px 20px;
 }
 
 .flexForm_icon {
@@ -204,9 +210,10 @@ h2 {
   padding-left: 5px;
 }
 
-.flexForm_search::placeholder {
+input::placeholder {
   color: black;
   font-weight: 600;
+  opacity: 1;
 }
 
 .info-logo-search {
@@ -233,6 +240,7 @@ button:hover {
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-left: 20px;
 }
 
 .info-filter h2 {
@@ -273,12 +281,28 @@ button {
   border: 2px solid #f2f2f2;
   padding-left: 40px;
   border-radius: 25px;
+  font-weight: 600;
+}
+
+/* Taille boutons */
+
+.btn-little {
   height: 45px;
-  width: 135px;
+  width: 110px;
+}
+
+.btn-middle {
+  height: 45px;
+  width: 130px;
+}
+
+.btn-bigger {
+  height: 45px;
+  width: 180px;
 }
 
 .btn-filter i {
-  background-color: #f2f2f2;
+  background-color: #DEEBFF;
   position: absolute;
   width: 45px;
   height: 45px;
@@ -286,11 +310,6 @@ button {
   left: -10px;
   padding-top: 15px;
   border-radius: 25px;
-}
-
-.btn-filter p {
-  display: inline;
-  overflow-wrap: normal;
 }
 
 /** Résultat Recherche **/
@@ -302,7 +321,7 @@ button {
   align-items: center;
   margin-left: 15px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .search-result i {
@@ -336,19 +355,22 @@ button {
   position: relative;
   background: #f2f2f2;
   width: 68%;
-  height: 620px;
+  height: 600px;
   padding: 10px;
   border-radius: 15px;
 }
 
 .hebergment-title {
   background: inherit;
+  margin-top: 20px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .hebergment-title h2 {
   background: inherit;
+  font-size: 20px;
 }
 
 .hebergment-card {
@@ -383,11 +405,12 @@ button {
 }
 
 .card-hebergment img {
-  width: 225px;
-  height: 150px;
+  width: 240px;
+  height: 120px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding: 5px 5px 0 5px;
+  object-fit: cover;
 }
 
 .card-hebergment-detail {
@@ -412,11 +435,12 @@ button {
 .most-popular {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: #f2f2f2;
   border-radius: 15px;
   padding: 20px;
   width: 26%;
+  height: 600px;
 }
 
 .most-popular-title {
@@ -424,19 +448,20 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
   background: inherit;
+  margin-top: 10px;
 }
 
 .most-popular h2 {
   background: inherit;
+  font-size: 20px;
 }
 
 .most-popular-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background-color: inherit;
+  margin-top: 10px;
 }
 
 .card-popular {
@@ -444,12 +469,15 @@ button {
   flex-direction: row;
   width: 100%;
   height: 130px;
-  margin: 15px 10px 15px 0;
+  margin: 15px 10px 40px 0;
   background: #fff;
   padding: 5px;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.15);
   border-radius: 15px;
   font-size: 15px;
+}
+
+.popular-card_1 {
 }
 
 .alone{
@@ -485,12 +513,16 @@ button {
 .activity {
   display: flex;
   flex-direction: column;
-  margin: 0 15px 20px 15px;
+  margin: 20px 20px 20px 15px;
   background: #fff;
 }
 
+.activity h2 {
+  font-size: 20px;
+}
+
 .activity-title {
-  margin-left: 20px;
+  margin-left: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -640,7 +672,7 @@ footer a {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 footer li {
@@ -653,6 +685,8 @@ footer section {
   display: flex;
   flex-direction: column;
   margin-top: 25px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .footer-about {
@@ -666,6 +700,7 @@ footer section {
 footer h2 {
   margin-left: 5px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 /******Média Queries*****/
