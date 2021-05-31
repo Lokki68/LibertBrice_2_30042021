@@ -452,6 +452,18 @@
     height: 25px;
   }
 
+  /* Acitivity*/
+
+  .twoCard {
+
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  .activity-card_2 {
+    margin-top: 0;
+  }
+
   footer {
     width: 414px;
   }
@@ -460,7 +472,7 @@
 /**Iphone 6/7/8  < 375px **/
 @media screen and (max-width: 375px) {
 
-  footer {
+footer {
     width: 374px;
   }
 }
