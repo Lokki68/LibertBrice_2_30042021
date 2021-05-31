@@ -217,8 +217,8 @@ h2 {
   opacity: 0.5;
 }
 
-.flexForm_search::focus {
-  opacity: 0;
+.flexForm_search:active {
+  border: none;
 }
 
 .info-logo-search {

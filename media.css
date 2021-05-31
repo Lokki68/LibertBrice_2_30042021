@@ -472,6 +472,12 @@
 /**Iphone 6/7/8  < 375px **/
 @media screen and (max-width: 375px) {
 
+  /* Hebergement */
+
+  .hebergment {
+    width: 100%;
+  }
+
 footer {
     width: 374px;
   }
