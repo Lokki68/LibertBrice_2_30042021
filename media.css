@@ -87,7 +87,7 @@
 
   .activity {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   .activity-title {
@@ -102,6 +102,7 @@
   .activity-card_1,
   .activity-card_2 {
     flex-direction: column;
+    justify-content: center;
   }
 
 
@@ -433,7 +434,7 @@
   }
 }
 
-/**Iphone < 414px **/
+/**Iphone 6/7/8 plus < 414px **/
 
 @media screen and (max-width: 414px) {
   /* Info*/
@@ -449,5 +450,17 @@
   .search-result i {
     width: 25px;
     height: 25px;
+  }
+
+  footer {
+    width: 414px;
+  }
+}
+
+/**Iphone 6/7/8  < 375px **/
+@media screen and (max-width: 375px) {
+
+  footer {
+    width: 374px;
   }
 }
