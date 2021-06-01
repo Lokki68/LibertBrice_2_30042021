@@ -2,7 +2,6 @@
 
 /**Tablette < 1235px **/
 @media screen and (max-width: 1235px) {
-  
   /** Info - Filter **/
   .info-filter {
     flex-direction: column;
@@ -34,7 +33,7 @@
     justify-content: flex-start;
     width: 100%;
     height: auto;
-    border-radius: 0 ;
+    border-radius: 0;
     margin-bottom: 15px;
   }
 
@@ -47,7 +46,7 @@
     justify-content: flex-start;
   }
 
-  .popular-card_1{
+  .popular-card_1 {
     display: flex;
   }
 
@@ -102,9 +101,8 @@
   .activity-card_1,
   .activity-card_2 {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
   }
-
 
   .activity-bigCard {
     width: 900px;
@@ -137,6 +135,7 @@
 
   footer {
     justify-content: space-around;
+  }
 }
 
 /**Mobile < 925px **/
@@ -181,7 +180,7 @@
 
   /** Information **/
 
-    /* Titre */
+  /* Titre */
 
   .info-title {
     margin-top: 20px;
@@ -202,7 +201,7 @@
 
   .flexForm {
     margin-left: 20px;
-    width: 150px
+    width: 150px;
   }
 
   .flexForm_search {
@@ -259,12 +258,13 @@
 
   .most-popular-card {
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
   .card-popular {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 0;
   }
 
@@ -278,7 +278,7 @@
   .hebergment-card {
     display: flex;
     flex-direction: row;
-    justify-content:  space-around;
+    justify-content: space-around;
   }
   .hebergment-line-1 {
     flex-direction: column;
@@ -312,7 +312,6 @@
     flex-direction: row;
   }
 
-
   /* bigCard */
   .activity-bigCard {
     width: 290px;
@@ -343,13 +342,13 @@
   /* Little Card */
   .down {
     margin-top: 35px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  .up { 
+  .up {
     margin-bottom: 35px;
   }
-
-  
 
   /** Footer **/
 
@@ -366,27 +365,26 @@
 
 /* Break Hébergement */
 @media screen and (max-width: 860px) {
-
   .hebergment {
     width: auto;
   }
   .hebergment-card {
     width: auto;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
   }
 }
 
 /* Break Activity */
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 750px) {
   .activity-card_1,
   .activity-card_2 {
     flex-direction: column;
     align-items: center;
-    margin: 10px 0 10px 0 ;
+    margin: 10px 0 10px 0;
   }
-/* Suppression des marges */
+  /* Suppression des marges */
   .activity-bigCard,
   .activity-middleCard,
   .activity-littleCard {
@@ -396,7 +394,7 @@
 
   /* Redimensionnement des cartes. */
 
-   .activity-bigCard,
+  .activity-bigCard,
   .activity-middleCard,
   .activity-littleCard {
     width: 340px;
@@ -412,19 +410,24 @@
 }
 
 /* Break-popular */
-@media screen and (max-width: 610px){
-
-  .most-popular-card{
+@media screen and (max-width: 610px) {
+  /** Populaire**/
+  .most-popular-card {
     justify-content: center;
   }
 
-  .popular-card_1{
+  .popular-card_1 {
     flex-direction: column;
   }
 
+  /** Hebergement **/
+
+  .hebergment-card {
+    flex-direction: column;
+  }
   /* Footer */
 
-  footer{
+  footer {
     align-items: flex-start;
   }
 
@@ -443,7 +446,7 @@
 
   .flexForm {
     max-width: 320px;
-    width: 90%
+    width: 90%;
   }
 
   .flexForm_search {
@@ -466,7 +469,6 @@
   /* Acitivity*/
 
   .twoCard {
-
     justify-content: flex-start;
     height: auto;
   }
@@ -482,14 +484,15 @@
 
 /**Iphone 6/7/8  < 375px **/
 @media screen and (max-width: 375px) {
-
   /* Hebergement */
 
   .hebergment {
     width: 100%;
   }
 
-footer {
+  /* Footer */
+
+  footer {
     width: 374px;
   }
 }
