@@ -217,6 +217,10 @@ h2 {
   opacity: 0.5;
 }
 
+input:focus {
+  outline: none;
+  border: 1px solid #f2f2f2;
+
 .info-logo-search {
   background-color: #0065fc;
   color: #fff;
