@@ -321,7 +321,7 @@
 
   .twoCard {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 490px;
   }
 
