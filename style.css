@@ -89,6 +89,11 @@ h2 {
   font-weight: 600;
 }
 
+body {
+  max-width: 1500px;
+  margin: auto;
+}
+
 /* Couleur icone */
 .blue {
   color: #0065fc;
