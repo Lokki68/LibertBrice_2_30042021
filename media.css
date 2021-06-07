@@ -378,6 +378,10 @@
 /* Break Activity */
 
 @media screen and (max-width: 750px) {
+ 
+  
+ 
+ 
   .activity-card_1,
   .activity-card_2 {
     flex-direction: column;
