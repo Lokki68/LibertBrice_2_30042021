@@ -1,7 +1,7 @@
 /******Média Queries*****/
 
-/**Tablette < 1235px **/
-@media screen and (max-width: 1235px) {
+/**Tablette < 1050px **/
+@media screen and (max-width: 1050px) {
   /** Info - Filter **/
   .info-filter {
     flex-direction: column;
@@ -411,6 +411,27 @@
 
 /* Break-popular */
 @media screen and (max-width: 610px) {
+
+/* Search Bar */
+
+  .flexForm {
+    max-width: 320px;
+    width: 90%;
+  }
+
+  .flexForm_search {
+    width: 100%;
+  }
+
+    /* Filtre */
+  .filter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container_2 {
+    flex-direction: column;
+  }
+
   /** Populaire**/
   .most-popular-card {
     justify-content: center;
@@ -418,13 +439,57 @@
 
   .popular-card_1 {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .popular-card_2 {
+    width: 100%;
   }
 
   /** Hebergement **/
 
+  .hebergment {
+    width: 100%;
+  }
   .hebergment-card {
     flex-direction: column;
+    width: 100%;
   }
+
+  .hebergment-line-1,
+  .hebergment-line-2 {
+    width: 100%;
+  }
+
+  .card-hebergment {
+    width: 95%;
+  }
+
+  .card-hebergment img {
+    width: 100%;
+  }
+
+  /** Activity **/
+
+  .activity-card,
+  .twoCard {
+    width: 100%;
+  }
+
+
+
+  .activity-bigCard,
+  .activity-middleCard,
+  .activity-littleCard {
+    width: 100%;
+  }
+
+  .activity-bigCard img,
+  .activity-middleCard img,
+  .activity-littleCard img {
+    width: 100%;
+  }
+
   /* Footer */
 
   footer {
@@ -440,25 +505,7 @@
 /**Iphone 6/7/8 plus < 414px **/
 
 @media screen and (max-width: 414px) {
-  /* Info*/
-
-  /* Search Bar */
-
-  .flexForm {
-    max-width: 320px;
-    width: 90%;
-  }
-
-  .flexForm_search {
-    width: 100%;
-  }
-
-  /* Filtre */
-
-  .container_2 {
-    flex-direction: column;
-  }
-
+  
   /* Search result */
 
   .search-result i {
